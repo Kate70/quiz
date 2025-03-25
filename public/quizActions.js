@@ -4,7 +4,7 @@ import { displayQuiz } from './displayQuiz.js';
 
 export function runQuiz(quizId) {  
      
-    fetch(`http://quiz-fcoa.onrender.com/api/quizzes/${quizId}/questions`)
+    fetch(`https://quiz-fcoa.onrender.com/api/quizzes/${quizId}/questions`)
       .then(response => response.json())
       .then(questions => {
           displayQuiz(questions);          

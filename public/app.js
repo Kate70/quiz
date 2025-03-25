@@ -3,7 +3,7 @@ import { fetchQuizzes } from './fetchQuizzes.js';
 import { displayQuizzes } from './displayQuiz.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetchQuizzes('http://quiz-fcoa.onrender.com/api/quizzes')
+  fetchQuizzes('https://quiz-fcoa.onrender.com/api/quizzes')
     .then(data => {
       displayQuizzes(data);
     })

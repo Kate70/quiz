@@ -39,7 +39,7 @@ export function sendAnswers({ quizId, answers, timeTaken }) {
 export async function deleteQuiz(id, currentPage) {
     try {
         console.log(`Sending DELETE request for quiz with ID: ${id}`);
-        const response = await fetch(`http://quiz-fcoa.onrender.com/api/quizzes/${id}`, {
+        const response = await fetch(`https://quiz-fcoa.onrender.com/api/quizzes/${id}`, {
             method: 'DELETE',
         });
 

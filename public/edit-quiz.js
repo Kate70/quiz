@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const quizId = new URLSearchParams(window.location.search).get('id');
      
     if (quizId) {
-        fetch(`http://quiz-fcoa.onrender.com/api/quizzes/${quizId}`)
+        fetch(`https://quiz-fcoa.onrender.com/api/quizzes/${quizId}`)
             .then(response => response.json())
             .then(quiz => {
                 document.getElementById('quiz-name').value = quiz.name;
