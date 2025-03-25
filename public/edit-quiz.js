@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const quizId = new URLSearchParams(window.location.search).get('id');
      
     if (quizId) {
-        fetch(`http://localhost:3000/api/quizzes/${quizId}`)
+        fetch(`http://quiz-fcoa.onrender.com/api/quizzes/${quizId}`)
             .then(response => response.json())
             .then(quiz => {
                 document.getElementById('quiz-name').value = quiz.name;
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             questions
         };
 
-        fetch(`http://localhost:3000/api/questionnaire/${quizId}`, {
+        fetch(`https://quiz-fcoa.onrender.com/api/questionnaire/${quizId}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedQuiz)
@@ -84,8 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
     .then(() => {
         alert('Quiz updated successfully!');
-        // Повертаємо на головну сторінку після успішного оновлення
-        window.location.href = '/';  // або на ваш шлях головної сторінки
+             window.location.href = '/';  
     })
     .catch(error => console.error('Error updating quiz:', error));
 }

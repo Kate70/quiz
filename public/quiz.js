@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const quizId = urlParams.get('id');
     
     if (quizId) {
-      fetch(`http://localhost:3000/api/quizzes/${quizId}/questions`)
+      fetch(`http://quiz-fcoa.onrender.com/api/quizzes/${quizId}/questions`)
         .then(response => response.json())
         .then(questions => {
           displayQuiz(questions);  

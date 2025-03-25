@@ -4,7 +4,7 @@ import { displayQuiz } from './displayQuiz.js';
 
 export function runQuiz(quizId) {  
      
-    fetch(`http://localhost:3000/api/quizzes/${quizId}/questions`)
+    fetch(`http://quiz-fcoa.onrender.com/api/quizzes/${quizId}/questions`)
       .then(response => response.json())
       .then(questions => {
           displayQuiz(questions);          
@@ -21,9 +21,7 @@ export function runQuiz(quizId) {
 
  
 export function editQuiz(quizId) {
-     window.location.href = `edit-quiz.html?id=${quizId}`;
-    alert(`Edit quiz with ID: ${quizId}`);
-    
+     window.location.href = `edit-quiz.html?id=${quizId}`;       
   }
   
   

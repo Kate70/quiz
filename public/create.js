@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
             completions: 0
         };
 
-        fetch("http://localhost:3000/api/questionnaire", {
+        fetch("http://quiz-fcoa.onrender.com/api/questionnaire", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
