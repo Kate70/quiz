@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(response => response.json())
         .then(data => {
-            alert("Questionnaire submitted successfully!");
+            window.location.href = '/';
             console.log(data);
         })
         .catch(error => {
