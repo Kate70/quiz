@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Questionnaire Builder</title>
+  <link rel="stylesheet" href="./styles/create.css">
+</head>
+<body>
+    <div class="section">
+    <div class="container">
+        <h1>Create a Questionnaire</h1>
+        <div class="questions">
+        <label for="quiz-name">Quiz Name:</label>
+        <input type="text" id="quiz-name" placeholder="Enter quiz name" required>
+        
+        <label for="quiz-description">Quiz Description:</label>
+        <textarea id="quiz-description" placeholder="Enter description"></textarea>
+    
+        <form id="question-form">
+          <div id="questions-container"></div>
+          <button type="button" id="add-question">Add Question</button>
+          <button type="submit" id="submit-questions">Submit Questionnaire</button>
+        </form>
+    </div>
+      </div>
+    </div>
+  <script src="create.js"></script>
+</body>
+</html>

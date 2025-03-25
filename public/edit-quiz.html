@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/edit.css">
+    <title>Edit Quiz</title>
+    
+</head>
+
+<body>
+    <div class="quiz-form-container">
+        <h1>Edit Quiz</h1>
+        <form id="quiz-form">
+            <label for="quiz-name">Quiz Name:</label>
+            <input type="text" id="quiz-name" required>
+
+            <label for="quiz-description">Quiz Description:</label>
+            <textarea id="quiz-description" required></textarea>
+
+            <div id="questions-container"></div>
+
+            <button type="button" id="add-question">Add Question</button>
+            <button type="button" id="save-changes">Save Changes</button>
+        </form>
+    </div>
+    
+    <script src="edit-quiz.js"></script>
+</body>
+</html>

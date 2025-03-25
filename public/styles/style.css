@@ -1,0 +1,123 @@
+/* Основні стилі для сторінки */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffafa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Контейнер для контенту */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Стиль для списку квізів */
+#quiz-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Сітка для квадратиків */
+    gap: 10px;
+    justify-items: center;
+    padding: 10px;
+}
+
+/* Стиль для кожного квіза */
+.quiz-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;  
+    border: 1px solid black; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 340px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    margin: 5px;
+    gap: 5px;
+}
+
+.quiz-item:hover {
+    transform: translateY(-5px); /* Ефект при наведенні */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль для заголовка та опису */
+.quiz-content {
+    flex: 1;
+    text-align: center; /* Центрування назви та опису */
+}
+
+.quiz-title {
+    font-size: 1.6em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.quiz-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Стиль для статистики квіза */
+.quiz-stats {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.quiz-stats p {
+    margin: 5px 0;
+}
+
+/* Стиль для кнопок */
+.quiz-actions {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 5px;
+}
+
+.quiz-actions button {
+    padding: 8px 16px;
+    margin-top: 5px;
+    cursor: pointer;
+    width: 100%; /* Якщо ви хочете, щоб кнопки займали однакову ширину */
+    box-sizing: border-box;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-actions .edit-btn {
+    background-color: #a8f1aaf9;
+    color: white;
+}
+
+.quiz-actions .run-btn {
+    background-color: #7fb0d7;
+    color: white;
+}
+
+.quiz-actions .delete-btn {
+    background-color: #e69691;
+    color: white;
+}
+
+.create-btn{
+    background-color: #6f9ac9;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
