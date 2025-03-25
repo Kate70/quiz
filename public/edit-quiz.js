@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             questions
         };
 
-        fetch(`https://quiz-fcoa.onrender.com/api/questionnaire/${quizId}`, {
+        fetch(`https://quiz-fcoa.onrender.com/api/quizzes/${quizId}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(updatedQuiz)
