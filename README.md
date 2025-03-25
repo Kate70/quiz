@@ -29,3 +29,6 @@ This is a web-based application for building questionnaires.
 - **Front-end**: HTML, CSS, JavaScript
 - **Back-end**: Node.js, Express.js
 - **Database**: MongoDB
+- 
+## Deployment
+The application is deployed using render.com and can be accessed at the following URL: https://quiz-fcoa.onrender.com
